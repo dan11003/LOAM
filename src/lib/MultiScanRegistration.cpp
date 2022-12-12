@@ -271,7 +271,7 @@ void MultiScanRegistration::process(pcl::PointCloud<pcl::PointXYZ>& laserCloudIn
         myfile << ii << " " << oriTemp << " " << pointTemp.x << " " << pointTemp.z << " " << scanID << " \n";
       }
       myfile.close();*/
-      ROS_INFO("[multiScanRegistration] Too many scanID" );
+      ROS_INFO("[multiScanRegistration] Too many scanID, %d", scanID );
       break;
     }
 
